@@ -76,30 +76,66 @@ body {
 }
 
 .icon-works {
-    top: 150px;
+    top: 147px;
+    left: 678px;
 }
 
 .news {
     background-color: #DCFACD;
-    height: 2284px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.news-item-small {
+.news-highlight {
     background-color: #275B0D;
-    /* 新着情報の小さい箱の色 */
     width: 550px;
-    height: 2540px;
+    height: 200px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.news-item-large {
-    background-color: #DCFACD;
-    /* 新着情報の大きい箱の色 */
+.news-highlight h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0;
+}
+
+.news-boxes {
+    display: flex;
+    flex-direction: column;
+    /* ← これを追加 */
+    gap: 5px;
+    /* 間隔を開けたいならgapを追加（任意） */
+    margin-top: -100px;
+    margin-left: 450px;
+}
+
+.news-box {
+    background-color: #63B13C;
     width: 1050px;
-    height: 300px;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+
 }
 
 .icon-news {
-    top: 150px;
+    position: absolute;
+    top: 2284px;
+    left: 678px;
+
+    height: auto;
+}
+
+.parallax {
+    background-image: url('image/work_img2.png');
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
 }
 
 .company {
