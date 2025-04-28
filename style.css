@@ -6,19 +6,28 @@ body {
 }
 
 .hero {
-    margin: 0;
-    padding: 0;
+    width: 100vw;
+    /* 画面幅いっぱい */
+    height: 700px;
+    background-color: #ccc;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .hero img {
     display: block;
+    margin: 0 auto;
     width: 100%;
     height: auto;
 }
 
+.section {
+    position: relative;
+}
+
 .icon {
     position: absolute;
-    /* ←子にabsolute */
+    top: 390px;
     left: 50%;
     /* ←画面の横中央に */
     transform: translateX(-50%);
@@ -30,58 +39,128 @@ body {
 }
 
 .business {
-    width: 1200px;
-    height: 628px;
-    background-color: #ffffff;
-    /* 背景色が白の場合 */
-    position: absolute;
-    top: 750px;
-    left: 150px;
+    text-align: center;
+    padding: 200px 0 40px 0;
+    background-color: #fff;
+}
+
+.business h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.business p {
+    margin-bottom: 60px;
+    /* ← ここで下に大きく離す */
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.business-labels {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+
+.business-label-box {
+    width: 220px;
+    background: #fff;
+    border: 2px solid #63B13C;
+    border-radius: 0;
+    box-shadow: 1px 1px 8px 0 rgba(80, 80, 80, 0.15), 1px 1px 0 0 #aaa;
+    /* ↑2段重ねで少し浮き出し感 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 14px 18px 14px;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s;
+}
+
+.business-label-box:hover {
+    box-shadow: 3px 3px 14px 0 rgba(80, 80, 80, 0.2), 2px 2px 0 0 #888;
+}
+
+.label-title {
+    font-weight: bold;
+    color: #63B13C;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+
+.label-desc {
+    font-size: 0.97rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 2px;
+    width: 100%;
 }
 
 .icon-business {
-    top: 750px;
+    display: block;
+    margin: 0 auto 10px auto;
+    /* 中央＋下に余白 */
+    width: 140px;
+    /* お好みで */
+    height: auto;
+    position: static;
+    /* 追加：絶対位置指定を打ち消し */
 }
 
+
 .works {
-    width: 1500px;
-    height: 806px;
-    margin: 0 auto;
-    border: 1px solid #ffffff;
-    /* 1pxのボーダー */
-    position: relative;
-    /* 中の要素をabsolute配置するために必要 */
+    width: 100%;
+    padding: 60px 0 60px 0;
+    background: #DCFACD;
+    /* 横幅や中央寄せなどはここで */
+}
+
+.works-inner {
+    display: flex;
+    justify-content: center;
+    /* 真ん中で横並び */
+    align-items: flex-start;
+    /* 上端揃え（お好みでcenterも可） */
+    gap: 60px;
+    /* 画像とテキストの間隔 */
 }
 
 .works-img {
     width: 600px;
     height: 400px;
-    position: absolute;
-    top: 300px;
-    left: 150px;
+    object-fit: cover;
 }
 
 .works-textbox {
-    width: 550px;
-    height: 359px;
-    position: absolute;
-    top: 300px;
-    left: 800px;
-    border: 1px solid #ffffff;
-    border-radius: 20px;
-    background-color: #fff;
-    /* 白背景にしておくとわかりやすい */
-    padding: 20px;
+    width: 480px;
+    min-height: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 28px 32px;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .icon-works {
-    top: 147px;
-    left: 678px;
+    display: block;
+    margin: 0 auto 10px auto;
+    /* 中央＋下に余白 */
+    width: 140px;
+    /* お好みで */
+    height: auto;
+    position: static;
+    /* 追加：絶対位置指定を打ち消し */
 }
 
 .news {
-    background-color: #DCFACD;
+    background-color: #ffffff;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -90,7 +169,7 @@ body {
     background-color: #275B0D;
     width: 550px;
     height: 200px;
-    margin: 0;
+    margin: 150;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,13 +178,17 @@ body {
 .news-highlight h2 {
     color: #ffffff;
     font-size: 36px;
+    font-weight: 300;
+    /* 少し細め */
     margin: 0;
 }
 
 .news-boxes {
     display: flex;
     flex-direction: column;
-    /* ← これを追加 */
+    color: #fff;
+    font-weight: 300;
+    /* 少し細め */
     gap: 5px;
     /* 間隔を開けたいならgapを追加（任意） */
     margin-top: -100px;
@@ -122,11 +205,14 @@ body {
 }
 
 .icon-news {
-    position: absolute;
-    top: 2284px;
-    left: 678px;
-
+    display: block;
+    margin: 0 auto 10px auto;
+    /* 中央＋下に余白 */
+    width: 140px;
+    /* お好みで */
     height: auto;
+    position: static;
+    /* 追加：絶対位置指定を打ち消し */
 }
 
 .parallax {
@@ -138,13 +224,39 @@ body {
     margin-top: 50px;
 }
 
-.company {
-    background-color: #ffffff;
-    height: 1050px;
+.company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
 }
 
 .icon-company {
-    top: 3440px;
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 90px;
+    height: auto;
+    position: static;
+}
+
+.company-labels-details-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px 40px;
+}
+
+.label-box,
+.detail-box {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    min-height: 50px;
+    white-space: pre-line;
+    word-break: break-all;
 }
 
 .contact {
@@ -153,7 +265,7 @@ body {
 }
 
 .icon-contact {
-    top: 4542px;
+    top: 3342px;
 }
 
 .map {
