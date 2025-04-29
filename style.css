@@ -75,29 +75,34 @@ body {
     background-color: #fff;
 } */
 .business {
-  text-align: center;
-  padding: 100px 0 60px 0;
-  background-color: #fff;
-  position: relative;
+    text-align: center;
+    padding: 100px 0 60px 0;
+    background-color: #fff;
+    position: relative;
 }
 
 .business-icon {
-  width: 144px;
-  height: auto;
-  margin-bottom: -35px; /* アイコンの下に20px空ける */
+    width: 144px;
+    height: auto;
+    margin-bottom: -35px;
+    /* アイコンの下に20px空ける */
 }
 
 .business-title {
-  font-size: 32px; /* 必要に応じて大きさ調整 */
-  font-weight: 400; /* 通常より少し細め（300〜400ぐらいがいい） */
-  color: #333;
-  margin-bottom: 20px; /* タイトルの下に20px空ける（ラインとの間隔） */
+    font-size: 32px;
+    /* 必要に応じて大きさ調整 */
+    font-weight: 400;
+    /* 通常より少し細め（300〜400ぐらいがいい） */
+    color: #333;
+    margin-bottom: 20px;
+    /* タイトルの下に20px空ける（ラインとの間隔） */
 }
 
 .business-line {
-  width: 100px;
-  height: auto;
-  margin-bottom: 40px; /* ライン画像の下に余裕をもたせたい場合 */
+    width: 100px;
+    height: auto;
+    margin-bottom: 40px;
+    /* ライン画像の下に余裕をもたせたい場合 */
 }
 
 .business h2 {
@@ -121,17 +126,19 @@ body {
 }
 
 .business-label-box {
-  width: 220px;
-  background: #fff;
-  border: 2px solid #63B13C; /* ← 枠線を2pxに！ */
-  border-radius: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 10, 0.1); /* ← 下だけ影！ */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px 14px 18px 14px;
-  box-sizing: border-box;
-  transition: box-shadow 0.2s;
+    width: 220px;
+    background: #fff;
+    border: 2px solid #63B13C;
+    /* ← 枠線を2pxに！ */
+    border-radius: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 10, 0.1);
+    /* ← 下だけ影！ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 14px 18px 14px;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s;
 }
 
 .business-label-box:hover {
@@ -139,16 +146,20 @@ body {
 }
 
 .label-title {
-  font-weight: bold;
-  font-size: 1.1rem;
-    font-weight: 400; /* 通常より少し細め（300〜400ぐらいがいい） */
-  letter-spacing: 0.05em;
-  color: #000000#63B13C; /* 通常の文字色 */
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: 400;
+    /* 通常より少し細め（300〜400ぐらいがいい） */
+    letter-spacing: 0.05em;
+    color: #000000#63B13C;
+    /* 通常の文字色 */
 }
 
 .label-title .highlight {
-  font-weight: 400; /* 通常より少し細め（300〜400ぐらいがいい） */
-  color: #63B13C; /* ← ここで2文字目だけ色変えます！好きな色に */
+    font-weight: 400;
+    /* 通常より少し細め（300〜400ぐらいがいい） */
+    color: #63B13C;
+    /* ← ここで2文字目だけ色変えます！好きな色に */
 }
 
 .label-desc {
@@ -171,14 +182,17 @@ body {
 }
 
 .business-button {
-  margin-top: 30px; /* ラベルボックス下に20px空ける */
-  text-align: center; /* 中央寄せ */
+    margin-top: 30px;
+    /* ラベルボックス下に20px空ける */
+    text-align: center;
+    /* 中央寄せ */
 }
 
 .form-button2 {
-  width: 244px; /* 必要ならサイズ指定、または自然な大きさで */
-  height: auto;
-  display: inline-block;
+    width: 244px;
+    /* 必要ならサイズ指定、または自然な大きさで */
+    height: auto;
+    display: inline-block;
 }
 
 .works {
@@ -187,98 +201,137 @@ body {
     background: #DCFACD;
     text-align: center;
 }
+
 .works-icon {
-  width: 144px;
-  height: auto;
-  margin-bottom: -35px; /* アイコンの下に20px空ける */
+    width: 144px;
+    height: auto;
+    margin-bottom: -35px;
+    /* アイコンの下に20px空ける */
 }
 
 .works-title {
-  font-size: 32px; /* 必要に応じて大きさ調整 */
-  font-weight: 400; /* 通常より少し細め（300〜400ぐらいがいい） */
-  color: #333;
-  margin-bottom: 20px; /* タイトルの下に20px空ける（ラインとの間隔） */
+    font-size: 32px;
+    /* 必要に応じて大きさ調整 */
+    font-weight: 400;
+    /* 通常より少し細め（300〜400ぐらいがいい） */
+    color: #333;
+    margin-bottom: 20px;
+    /* タイトルの下に20px空ける（ラインとの間隔） */
 }
 
 .works-line {
-  width: 100px;
-  height: auto;
-  margin-bottom: 40px; /* ライン画像の下に余裕をもたせたい場合 */
+    width: 100px;
+    height: auto;
+    margin-bottom: 40px;
+    /* ライン画像の下に余裕をもたせたい場合 */
 }
 
 .works-slider {
-  display: flex;
-  overflow-x: auto; /* 横スクロールできるように */
-  gap: 40px;
-  padding: 40px;
-  scroll-snap-type: x mandatory; /* スナップ効果（吸い付く） */
+    display: flex;
+    overflow-x: auto;
+    /* 横スクロールできるように */
+    gap: 40px;
+    padding: 40px;
+    scroll-snap-type: x mandatory;
+    /* スナップ効果（吸い付く） */
 }
 
 .slide {
-  flex: 0 0 auto;
-  display: flex; /* ← 中で画像とテキストを横並びにする */
-  align-items: flex-start;
-  gap: 40px;
-  width: 1000px; /* スライド1枚分の横幅を設定 */
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  scroll-snap-align: center;
+    flex: 0 0 auto;
+    display: flex;
+    /* ← 中で画像とテキストを横並びにする */
+    align-items: flex-start;
+    gap: 40px;
+    width: 1000px;
+    /* スライド1枚分の横幅を設定 */
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    scroll-snap-align: center;
 }
 
 .works-img {
-  width: 600px; /* 左画像は600px固定 */
-  height: auto;
-  object-fit: cover;
+    width: 600px;
+    /* 左画像は600px固定 */
+    height: auto;
+    object-fit: cover;
 }
 
 .slide-text {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .slide-text-inner {
-  display: flex;
-  flex-direction: column; /* ← 本当にここで縦並びにする！ */
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    /* ← 本当にここで縦並びにする！ */
+    align-items: flex-start;
 }
 
 .works-label {
-  width: 120px;
-  height: auto;
-  margin-bottom: 20px;
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .slide-text h3 {
-  font-size: 24px;
-  margin: 0 0 10px 0;
-  color: #333;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: #333;
 }
 
 .line-under {
-  width: 360px;  /* ← 今よりかなり太く長くする */
-  height: auto;
-  margin: 10px 0 20px 0;
-  display: block;
+    width: 360px;
+    /* ← 今よりかなり太く長くする */
+    height: auto;
+    margin: 10px 0 20px 0;
+    display: block;
 }
 
 .slide-text p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
 }
 
 .news {
-    background-color: #ffffff;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    width: 100%;
+    text-align: center;
+    /* ← ここで中央揃えにする！ */
+    background-color: #FFFFFF;
+    padding: 60px 0;
+}
+
+.news-icon {
+    width: 144px;
+    height: auto;
+    margin-bottom: -35px;
+    /* アイコンの下に20px空ける */
+}
+
+.news-title {
+    font-size: 32px;
+    /* 必要に応じて大きさ調整 */
+    font-weight: 400;
+    /* 通常より少し細め（300〜400ぐらいがいい） */
+    color: #333;
+    margin-bottom: 20px;
+    /* タイトルの下に20px空ける（ラインとの間隔） */
+}
+
+.news-line {
+    width: 100px;
+    height: auto;
+    margin-bottom: 40px;
+    /* ライン画像の下に余裕をもたせたい場合 */
 }
 
 .news-highlight {
     background-color: #275B0D;
-    width: 550px;
-    height: 200px;
+    width: 950px;
+    height: 300px;
     margin: 150;
     display: flex;
     align-items: center;
@@ -302,7 +355,7 @@ body {
     gap: 5px;
     /* 間隔を開けたいならgapを追加（任意） */
     margin-top: -100px;
-    margin-left: 450px;
+    margin-left: 845px;
 }
 
 .news-box {
@@ -311,6 +364,11 @@ body {
     height: 100px;
     padding: 20px;
     box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    /* ← 追加！ */
+    align-items: center;
+    /* ← 縦方向中央揃え！ */
 
 }
 
@@ -326,12 +384,15 @@ body {
 }
 
 .parallax {
-    background-image: url('image/work_img2.png');
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 400px;
-    margin-top: 50px;
+  background-image: url('image/work_img2.png'); /* 背景画像指定 */
+  background-position: center; /* 中央に配置 */
+  background-size: cover; /* ← 画面にフィットさせて拡大！ */
+  background-repeat: no-repeat; /* ← 繰り返しなし！ */
+  background-attachment: fixed; /* パララックス効果 */
+  
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
 }
 
 .company-info {
