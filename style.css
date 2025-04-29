@@ -7,7 +7,6 @@ body {
 
 .hero {
     width: 100vw;
-    /* 画面幅いっぱい */
     height: 700px;
     background-color: #ccc;
     margin: 0 auto;
@@ -260,20 +259,132 @@ body {
 }
 
 .contact {
-    background-color: #63B13C;
-    height: 926px;
+    background: #63B13C;
+    /* セクションの背景色（元の緑色） */
+    padding: 60px 20px;
+    text-align: center;
+    font-weight: 300;
+    /* 全体の文字を少し細めに */
+    margin-top: 50px;
+    /* ←これを追加！！ */
 }
 
-.icon-contact {
-    top: 3342px;
+.contact h2 {
+    color: #fff;
+    font-size: 36px;
+    /* セクションタイトル36pxに */
+    margin-bottom: 40px;
+    font-weight: 300;
+    /* タイトルも細め */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 右寄せ */
+    padding: 0 30px;
+    /* 右側に30px空ける */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    /* 通常は中央揃え */
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.textarea-row {
+    align-items: flex-start;
+    /* ←ここでform-rowそのものを上寄せにする！ */
+}
+
+.form-row label {
+    width: 180px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+
+.form-row input,
+.form-row textarea {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-row textarea {
+    resize: vertical;
+}
+
+.form-row-button {
+    width: 100%;
+    text-align: center;
+    /* 送信ボタンを中央に */
+    margin-top: 40px;
+}
+
+.form-row-button button {
+    background: #fff;
+    color: #63B13C;
+    border: none;
+    width: 320px;
+    /* 幅を広く（もともと180pxくらいなら1.8倍→320px） */
+    height: 40px;
+    /* 縦を少し小さめ（もともと50px想定なら0.8倍） */
+    font-size: 1.2rem;
+    border-radius: 32px;
+    /* 丸みもキープ */
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.form-row-button button:hover {
+    background: #37801a;
 }
 
 .map {
-    background-color: #f5f5f5;
+    background: transparent;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.map-inner {
+    width: 1500px;
+    margin: 0 auto;
+    /* ←中央揃えにする！ */
     height: 400px;
+    position: relative;
+}
+
+.map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .footer {
     background-color: #275B0D;
-    height: 400px;
+    color: #DCFACD;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 16px;
+    font-family: 'Noto Serif JP', serif;
+    width: 1500px;
+    margin: 0 auto;
 }
