@@ -6,18 +6,50 @@ body {
 }
 
 .hero {
-    width: 100vw;
+    position: relative;
+    /* 重ねるために必要！ */
+    width: 1500px;
     height: 700px;
     background-color: #ccc;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.hero img {
+.hero img.main-hero {
     display: block;
-    margin: 0 auto;
     width: 100%;
     height: auto;
+}
+
+/* ロゴの位置とサイズ */
+.hero-logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 250px;
+    height: auto;
+}
+
+/* ボタンの位置とサイズ */
+.hero-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 240px;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 200px;
+    /* heroの上から200px下げる（必要に応じて調整） */
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.4;
+    /* 2行の間隔を少しあける */
 }
 
 .section {
@@ -37,10 +69,35 @@ body {
     /* 縦横比を崩さない */
 }
 
-.business {
+/* .business {
     text-align: center;
     padding: 200px 0 40px 0;
     background-color: #fff;
+} */
+.business {
+  text-align: center;
+  padding: 100px 0 60px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.business-icon {
+  width: 144px;
+  height: auto;
+  margin-bottom: -35px; /* アイコンの下に20px空ける */
+}
+
+.business-title {
+  font-size: 32px; /* 必要に応じて大きさ調整 */
+  font-weight: 400; /* 通常より少し細め（300〜400ぐらいがいい） */
+  color: #333;
+  margin-bottom: 20px; /* タイトルの下に20px空ける（ラインとの間隔） */
+}
+
+.business-line {
+  width: 100px;
+  height: auto;
+  margin-bottom: 40px; /* ライン画像の下に余裕をもたせたい場合 */
 }
 
 .business h2 {
@@ -64,18 +121,17 @@ body {
 }
 
 .business-label-box {
-    width: 220px;
-    background: #fff;
-    border: 2px solid #63B13C;
-    border-radius: 0;
-    box-shadow: 1px 1px 8px 0 rgba(80, 80, 80, 0.15), 1px 1px 0 0 #aaa;
-    /* ↑2段重ねで少し浮き出し感 */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 24px 14px 18px 14px;
-    box-sizing: border-box;
-    transition: box-shadow 0.2s;
+  width: 220px;
+  background: #fff;
+  border: 2px solid #63B13C; /* ← 枠線を2pxに！ */
+  border-radius: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 10, 0.1); /* ← 下だけ影！ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 14px 18px 14px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s;
 }
 
 .business-label-box:hover {
@@ -83,11 +139,16 @@ body {
 }
 
 .label-title {
-    font-weight: bold;
-    color: #63B13C;
-    font-size: 1.1rem;
-    margin-bottom: 16px;
-    letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 1.1rem;
+    font-weight: 400; /* 通常より少し細め（300〜400ぐらいがいい） */
+  letter-spacing: 0.05em;
+  color: #000000#63B13C; /* 通常の文字色 */
+}
+
+.label-title .highlight {
+  font-weight: 400; /* 通常より少し細め（300〜400ぐらいがいい） */
+  color: #63B13C; /* ← ここで2文字目だけ色変えます！好きな色に */
 }
 
 .label-desc {
@@ -109,53 +170,103 @@ body {
     /* 追加：絶対位置指定を打ち消し */
 }
 
+.business-button {
+  margin-top: 30px; /* ラベルボックス下に20px空ける */
+  text-align: center; /* 中央寄せ */
+}
+
+.form-button2 {
+  width: 244px; /* 必要ならサイズ指定、または自然な大きさで */
+  height: auto;
+  display: inline-block;
+}
 
 .works {
     width: 100%;
     padding: 60px 0 60px 0;
     background: #DCFACD;
-    /* 横幅や中央寄せなどはここで */
+    text-align: center;
+}
+.works-icon {
+  width: 144px;
+  height: auto;
+  margin-bottom: -35px; /* アイコンの下に20px空ける */
 }
 
-.works-inner {
-    display: flex;
-    justify-content: center;
-    /* 真ん中で横並び */
-    align-items: flex-start;
-    /* 上端揃え（お好みでcenterも可） */
-    gap: 60px;
-    /* 画像とテキストの間隔 */
+.works-title {
+  font-size: 32px; /* 必要に応じて大きさ調整 */
+  font-weight: 400; /* 通常より少し細め（300〜400ぐらいがいい） */
+  color: #333;
+  margin-bottom: 20px; /* タイトルの下に20px空ける（ラインとの間隔） */
+}
+
+.works-line {
+  width: 100px;
+  height: auto;
+  margin-bottom: 40px; /* ライン画像の下に余裕をもたせたい場合 */
+}
+
+.works-slider {
+  display: flex;
+  overflow-x: auto; /* 横スクロールできるように */
+  gap: 40px;
+  padding: 40px;
+  scroll-snap-type: x mandatory; /* スナップ効果（吸い付く） */
+}
+
+.slide {
+  flex: 0 0 auto;
+  display: flex; /* ← 中で画像とテキストを横並びにする */
+  align-items: flex-start;
+  gap: 40px;
+  width: 1000px; /* スライド1枚分の横幅を設定 */
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  scroll-snap-align: center;
 }
 
 .works-img {
-    width: 600px;
-    height: 400px;
-    object-fit: cover;
+  width: 600px; /* 左画像は600px固定 */
+  height: auto;
+  object-fit: cover;
 }
 
-.works-textbox {
-    width: 480px;
-    min-height: 400px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 16px;
-    padding: 28px 32px;
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.slide-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.icon-works {
-    display: block;
-    margin: 0 auto 10px auto;
-    /* 中央＋下に余白 */
-    width: 140px;
-    /* お好みで */
-    height: auto;
-    position: static;
-    /* 追加：絶対位置指定を打ち消し */
+.slide-text-inner {
+  display: flex;
+  flex-direction: column; /* ← 本当にここで縦並びにする！ */
+  align-items: flex-start;
+}
+
+.works-label {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.slide-text h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.line-under {
+  width: 360px;  /* ← 今よりかなり太く長くする */
+  height: auto;
+  margin: 10px 0 20px 0;
+  display: block;
+}
+
+.slide-text p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
 }
 
 .news {
