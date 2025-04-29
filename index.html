@@ -50,7 +50,9 @@
 
                 <img src="image/ETELLIA_logo.png" alt="ETELLIAロゴ" class="hero-logo">
 
-                <img src="image/form_button.png" alt="お問い合わせボタン" class="hero-button">
+                <a href="#contact">
+                    <img src="image/form_button.png" alt="お問い合わせボタン" class="hero-button">
+                </a>
             </section>
         </section>
         <div class="container">
@@ -83,7 +85,9 @@
                         </div>
                     </div>
                     <div class="business-button">
-                        <img src="image/form_button2.png" alt="フォームボタン2" class="form-button2">
+                        <a href="#contact">
+                            <img src="image/form_button2.png" alt="フォームボタン2" class="form-button2">
+                        </a>
                     </div>
                 </section>
             </section>
@@ -167,12 +171,12 @@
         </section>
 
         <section class="news">
-                        <img src="image/logo_g.png" alt="ビジネスアイコン" class="news-icon">
+            <img src="image/logo_g.png" alt="ビジネスアイコン" class="news-icon">
 
-                <h2 class="news-title">新着情報</h2>
+            <h2 class="news-title">新着情報</h2>
 
-                <img src="image/line_under.png" alt="ライン画像" class="news-line">
-            
+            <img src="image/line_under.png" alt="ライン画像" class="news-line">
+
 
             <div class="news-highlight">
                 <h2>TOPICS</h2>
@@ -190,66 +194,134 @@
         <section class="parallax"></section>
 
         <section class="company-info">
+            <img src="image/logo_g.png" alt="ビジネスアイコン" class="company-info-icon">
+
+            <h2 class="company-info-title">会社情報</h2>
+            <img src="image/line_under.png" alt="ライン画像" class="company-info-line">
+
             <div class="company-labels-details-row">
+
+                <!-- ラベルと説明1 -->
                 <div class="label-box">会社名</div>
                 <div class="detail-box">ETELLIA Exterior株式会社</div>
+                <img src="image/line_label.png" class="line-between-label" alt="">
+                <img src="image/line_detail.png" class="line-between-detail" alt="">
+
+                <!-- ラベルと説明2 -->
                 <div class="label-box">本社所在地</div>
-                <div class="detail-box">〒111-1111
-                    東京都中央区銀座1-1-1　第一銀座ビル5F</div>
+                <div class="detail-box">〒111-1111 東京都中央区銀座1-1-1 第一銀座ビル5F</div>
+                <img src="image/line_label.png" class="line-between-label" alt="">
+                <img src="image/line_detail.png" class="line-between-detail" alt="">
+
+                <!-- ラベルと説明3 -->
                 <div class="label-box">電話番号</div>
                 <div class="detail-box">03-1234-5678</div>
-                <div class="label-box">設立</div>
+                <img src="image/line_label.png" class="line-between-label" alt="">
+                <img src="image/line_detail.png" class="line-between-detail" alt="">
 
+                <!-- ラベルと説明4 -->
+                <div class="label-box">設立</div>
                 <div class="detail-box">2020年4月1日</div>
+                <img src="image/line_label.png" class="line-between-label" alt="">
+                <img src="image/line_detail.png" class="line-between-detail" alt="">
+
+                <!-- ラベルと説明5 -->
                 <div class="label-box">資本金</div>
                 <div class="detail-box">500,000,00円</div>
-                <div class="label-box">主要取引先<br>（敬称略）</div>
-                <div class="detail-box">たろ商事株式会社<br>
+                <img src="image/line_label.png" class="line-between-label" alt="">
+                <img src="image/line_detail.png" class="line-between-detail" alt="">
+
+                <!-- ラベルと説明6 -->
+                <div class="label-box">主要取引先<br><small>（敬称略）</small></div>
+                <div class="detail-box">
+                    たろ商事株式会社<br>
                     株式会社ZAWA-ZAWA<br>
-                    Mina-Hachi株式会社<br Tora株式会社<br>
+                    Mina-Hachi株式会社<br>
+                    Tora株式会社<br>
                     有限会社かおり<br>
                     合同会社Bokeちゃん<br>
                     株式会社JAGAKENPI<br>
-                    マサシ不動産　その他多数</div>
+                    マサシ不動産 その他多数
+                </div>
+                <img src="image/line_label.png" class="line-between-label" alt="">
+                <img src="image/line_detail.png" class="line-between-detail" alt="">
+
             </div>
         </section>
-
-
+        <section class="contact" id="contact">
+        </section>
         <section class="contact">
-            <h2>お問い合わせ</h2>
+            <img src="image/logo_w.png" alt="ビジネスアイコン" class="contact-icon">
+            <h2 class="contact-title">お問い合わせ</h2>
+            <img src="image/line_under_w.png" alt="ライン画像" class="contact-line">
 
             <form class="contact-form">
+
                 <div class="form-row">
-                    <label for="name">お名前</label>
-                    <input type="text" id="name" name="name" required>
+                    <div class="form-label-block">
+                        <img src="image/form_tag1.png" class="form-icon" alt="必須">
+                        <label for="name">お名前</label>
+                        <img src="image/line_detail.png" class="line-divider" alt="">
+                    </div>
+                    <div class="form-input-block">
+                        <input type="text" id="name" name="name" required>
+                    </div>
                 </div>
+
                 <div class="form-row">
-                    <label for="furigana">フリガナ</label>
-                    <input type="text" id="furigana" name="furigana" required>
+                    <div class="form-label-block">
+                        <img src="image/form_tag1.png" class="form-icon" alt="必須">
+                        <label for="furigana">フリガナ</label>
+                        <img src="image/line_detail.png" class="line-divider" alt="">
+                    </div>
+                    <div class="form-input-block">
+                        <input type="text" id="furigana" name="furigana" required>
+                    </div>
                 </div>
+
                 <div class="form-row">
-                    <label for="tel">電話番号</label>
-                    <input type="tel" id="tel" name="tel">
+                    <div class="form-label-block">
+                        <img src="image/form_tag2.png" class="form-icon" alt="任意">
+                        <label for="tel">電話番号</label>
+                        <img src="image/line_detail.png" class="line-divider" alt="">
+                    </div>
+                    <div class="form-input-block">
+                        <input type="tel" id="tel" name="tel">
+                    </div>
                 </div>
+
                 <div class="form-row">
-                    <label for="email">メールアドレス</label>
-                    <input type="email" id="email" name="email" required>
+                    <div class="form-label-block">
+                        <img src="image/form_tag1.png" class="form-icon" alt="必須">
+                        <label for="email">メールアドレス</label>
+                        <img src="image/line_detail.png" class="line-divider" alt="">
+                    </div>
+                    <div class="form-input-block">
+                        <input type="email" id="email" name="email" required>
+                    </div>
                 </div>
+
                 <div class="form-row textarea-row">
-                    <label for="message">お問い合わせ内容</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="form-label-block">
+                        <img src="image/form_tag1.png" class="form-icon" alt="必須">
+                        <label for="message">お問い合わせ内容</label>
+                        <img src="image/line_detail.png" class="line-divider" alt="">
+                    </div>
+                    <div class="form-input-block">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
                 </div>
+
                 <div class="form-row-button">
-                    <button type="submit">送信する</button>
+                    <button type="submit">送信</button>
                 </div>
+
             </form>
         </section>
-        </div>
-        <section class="map">
-            <div class="map-inner">
-                <img src="image/map.png" alt="地図" class="map-img">
-            </div>
-        </section>
+
+
+
+
 
         <footer class="footer">
             <p>Copyright© 2022 ETELLIA Exterior Inc. All Rights Reserved.</p>

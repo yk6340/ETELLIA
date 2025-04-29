@@ -308,7 +308,7 @@ body {
     width: 144px;
     height: auto;
     margin-bottom: -35px;
-    /* アイコンの下に20px空ける */
+
 }
 
 .news-title {
@@ -384,22 +384,47 @@ body {
 }
 
 .parallax {
-  background-image: url('image/work_img2.png'); /* 背景画像指定 */
-  background-position: center; /* 中央に配置 */
-  background-size: cover; /* ← 画面にフィットさせて拡大！ */
-  background-repeat: no-repeat; /* ← 繰り返しなし！ */
-  background-attachment: fixed; /* パララックス効果 */
-  
-  width: 100%;
-  height: 400px;
-  margin-top: 50px;
+    background-image: url('image/work_img2.png');
+    /* 背景画像指定 */
+    background-position: center;
+    /* 中央に配置 */
+    background-size: cover;
+    /* ← 画面にフィットさせて拡大！ */
+    background-repeat: no-repeat;
+    /* ← 繰り返しなし！ */
+    background-attachment: fixed;
+    /* パララックス効果 */
+
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
 }
 
 .company-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.company-info-icon {
+    width: 144px;
+    height: auto;
+    margin-bottom: -35px;
+}
+
+.company-info-title {
+    font-size: 32px;
+    /* 必要に応じて大きさ調整 */
+    font-weight: 400;
+    /* 通常より少し細め（300〜400ぐらいがいい） */
+    color: #333;
+    margin-bottom: 20px;
+    /* タイトルの下に20px空ける（ラインとの間隔） */
+}
+
+.company-info-line {
+    width: 100px;
+    height: auto;
+    margin-bottom: 40px;
 }
 
 .icon-company {
@@ -412,119 +437,140 @@ body {
 
 .company-labels-details-row {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px 40px;
+    grid-template-columns: 200px 1fr;
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-.label-box,
+.label-box {
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+.detail-box-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
 .detail-box {
+    line-height: 1.8;
+}
+
+.company-line {
     width: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 18px;
-    padding: 14px 20px;
-    box-sizing: border-box;
-    min-height: 50px;
-    white-space: pre-line;
-    word-break: break-all;
+    height: auto;
+    margin-top: 4px;
 }
 
 .contact {
-    background: #63B13C;
-    /* セクションの背景色（元の緑色） */
-    padding: 60px 20px;
-    text-align: center;
-    font-weight: 300;
-    /* 全体の文字を少し細めに */
-    margin-top: 50px;
-    /* ←これを追加！！ */
+  background: #63B13C;
+  padding: 60px 20px;
+  text-align: center;
+  font-weight: 300;
+  max-width: 1500px;
+  margin: 50px auto 0 auto;
 }
 
-.contact h2 {
-    color: #fff;
-    font-size: 36px;
-    /* セクションタイトル36pxに */
-    margin-bottom: 40px;
-    font-weight: 300;
-    /* タイトルも細め */
+.contact-icon {
+  width: 144px;
+  margin-bottom: -35px;
+}
+
+.contact-title {
+  font-size: 36px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.contact-line {
+  width: 100px;
+  height: auto;
+  margin-bottom: 40px;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    /* 右寄せ */
-    padding: 0 30px;
-    /* 右側に30px空ける */
-    max-width: 700px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .form-row {
-    display: flex;
-    align-items: center;
-    /* 通常は中央揃え */
-    width: 100%;
-    margin-bottom: 20px;
-    gap: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.textarea-row {
-    align-items: flex-start;
-    /* ←ここでform-rowそのものを上寄せにする！ */
+.form-label-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
 }
 
-.form-row label {
-    width: 180px;
-    text-align: left;
-    font-weight: 300;
-    font-size: 24px;
-    color: #fff;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
+.form-input-block {
+  flex-grow: 1;
 }
 
-
-.form-row input,
-.form-row textarea {
-    flex: 1;
-    padding: 10px 14px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    box-sizing: border-box;
+.form-input-block input,
+.form-input-block textarea {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #333;
 }
 
-.form-row textarea {
-    resize: vertical;
+.textarea-row .form-input-block textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-icon {
+  width: 40px;
+  height: auto;
+}
+
+.line-divider {
+  height: 24px;
+  width: auto;
+  display: block;
 }
 
 .form-row-button {
-    width: 100%;
-    text-align: center;
-    /* 送信ボタンを中央に */
-    margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .form-row-button button {
-    background: #fff;
-    color: #63B13C;
-    border: none;
-    width: 320px;
-    /* 幅を広く（もともと180pxくらいなら1.8倍→320px） */
-    height: 40px;
-    /* 縦を少し小さめ（もともと50px想定なら0.8倍） */
-    font-size: 1.2rem;
-    border-radius: 32px;
-    /* 丸みもキープ */
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
+  background: #fff;
+  color: #63B13C;
+  border: none;
+  width: 320px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
 }
 
 .form-row-button button:hover {
-    background: #37801a;
+  background: #37801a;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .map {
